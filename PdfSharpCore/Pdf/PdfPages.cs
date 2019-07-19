@@ -439,6 +439,9 @@ namespace PdfSharpCore.Pdf
             CloneElement(page, importPage, PdfPage.Keys.BleedBox, true);
             CloneElement(page, importPage, PdfPage.Keys.TrimBox, true);
             CloneElement(page, importPage, PdfPage.Keys.ArtBox, true);
+
+            // Graph Super fix
+            CloneElement(page, importPage, PdfPage.Keys.Annots, true);
 #if true
             // Do not deep copy annotations.
             //CloneElement(page, importPage, PdfPage.Keys.Annots, false);
